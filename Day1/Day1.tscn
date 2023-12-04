@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc37krvrg8idw"]
+
+[ext_resource type="Script" path="res://Day1/Day1.gd" id="1_t7tjk"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 232.0
+offset_top = 96.0
+offset_right = 824.0
+offset_bottom = 552.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.703
+anchor_bottom = 0.098
+offset_left = 8.0
+offset_right = -8.17599
+offset_bottom = 0.175999
+grow_horizontal = 2
+text = "Input"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.703
+anchor_top = 0.158
+anchor_right = 1.0
+anchor_bottom = 0.32
+offset_left = 7.82401
+offset_top = -0.0480042
+offset_right = -9.0
+offset_bottom = -0.224014
+text = "Make it go!"
+script = ExtResource("1_t7tjk")
+
+[node name="TextOutput" type="TextEdit" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.377
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 68.088
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+
+[node name="Output" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.456
+anchor_right = 1.0
+anchor_bottom = 0.507
+offset_left = 8.0
+offset_top = 0.0639801
+offset_right = -8.0
+offset_bottom = -0.192017
+grow_horizontal = 2
+text = "Output"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextInput" type="TextEdit" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.105
+anchor_right = 0.703
+anchor_bottom = 0.421
+offset_left = 8.0
+offset_top = -2.88
+offset_right = -0.175995
+offset_bottom = 0.0239868
+grow_horizontal = 2
