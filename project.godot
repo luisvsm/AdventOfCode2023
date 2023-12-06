@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="Advent Of Code 2023"
-run/main_scene="res://Day2/Day2.tscn"
+run/main_scene="res://Day3/Day3.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"

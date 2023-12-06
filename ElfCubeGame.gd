@@ -32,9 +32,9 @@ func add_game(inputGame:String):
 		print("game_id: " + str(game_id))
 		var allMeasurementText = gameLineResult.get_string(2)
 		var gemsInHandByRound = allMeasurementText.split(";", true)
-		var round = 0
+		var gameRound = 0
 		for gemsInHand in gemsInHandByRound:
-			round = round + 1
+			gameRound = gameRound + 1
 			var gemsAndCountInHand = gemsInHand.split(",", true)
 			
 			for gameAndCount in gemsAndCountInHand:
@@ -48,7 +48,7 @@ func add_game(inputGame:String):
 				else:
 					printerr("Failed to parse: " + gameAndCount)
 					
-			print("round " + str(round) + ": " + str(cube_totals))
+			print("round " + str(gameRound) + ": " + str(cube_totals))
 	else:
 		printerr("Unable to parse line: " + inputGame)
 			
